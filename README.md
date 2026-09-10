@@ -1,39 +1,31 @@
-# HEILBAD – individuelle Landingpage
+# BADECOACH
 
-Freie, eigenständige Website ohne Baukasten und ohne externe Abhängigkeiten.
+Landingpage für BADECOACH – Langzeitbaden, Coaching und Rückzug.
+
+## Website
+
+https://badecoach.com
 
 ## Technik
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- keine externen Fonts
-- kein Tracking
-- keine Cookies
-- keine Frameworks
-- keine CDN-Abhängigkeiten
 
-## Inhalt
-Die Seite ist auf das individuelle HEILBAD-Konzept zugeschnitten:
-- Coaching + Langzeitbaden
-- Kupfer als Leitmaterial
-- warme, helle, organische Gestaltung
-- Badezeiten ab ca. 3 Stunden, häufig 9–12 Stunden
-- Trona, Ysop und Edelsteine als mögliche Badekomposition
-- eigener Rhythmus: Ankommen, Ablegen, Eintauchen, Stillwerden, Wahrnehmen, Weitergehen
-- klare Trennung von Coaching/Rückzug und medizinischer Behandlung
+Die Website ist bewusst einfach und unabhängig aufgebaut:
 
-## Vor Veröffentlichung
-1. In `script.js` `kontakt@deine-domain.de` durch die echte Kontaktadresse ersetzen.
-2. `impressum.html` vervollständigen.
-3. `datenschutz.html` an den tatsächlichen Hoster und alle später ergänzten Dienste anpassen.
-4. Optional später echte Fotos, Standort, Preise und Terminbuchung ergänzen.
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* GitHub Pages
 
-## Freie Software zur Bearbeitung
-- VSCodium
-- Kate
-- Geany
+Keine Website-Baukästen und keine externen Frameworks.
 
-## Freie Webserver
-- Caddy
-- nginx
-- Apache
+## Struktur
+
+* `index.html` – Startseite
+* `styles.css` – Gestaltung
+* `script.js` – Navigation und Kontaktfunktion
+* `impressum.html` – Impressum
+* `datenschutz.html` – Datenschutz
+* `Bilder/` – Bildmaterial
+
+## Status
+
+Die Website wird fortlaufend weiterentwickelt.
