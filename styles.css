@@ -417,21 +417,20 @@ p {
 .hero-note {
   position: absolute;
 
-  left: -32px;
-  bottom: 0;
+  left: 20px;
+  bottom: 20px;
 
-  width: 280px;
+  width: fit-content;
+  max-width: calc(100% - 40px);
 
-  padding: 23px 25px 20px;
+  padding: 18px 20px;
 
   border: 1px solid rgba(255, 255, 255, .42);
-
   border-radius: 20px;
 
   background: rgba(250, 247, 240, .86);
 
-  box-shadow:
-    0 18px 60px rgba(53, 42, 31, .12);
+  box-shadow: 0 18px 60px rgba(53, 42, 31, .12);
 
   backdrop-filter: blur(13px);
 }
@@ -829,12 +828,13 @@ p {
 
 .footer-main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  justify-content: space-between;
+  gap: 24px;
 
-  gap: 32px;
-
-  align-items: flex-start;
+  text-align: center;
 }
 
 .footer-brand strong {
@@ -862,12 +862,15 @@ p {
   font-size: 11px;
 }
 
-.footer-links {
+.footer-main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  flex-wrap: wrap;
+  gap: 24px;
 
-  gap: 22px;
+  text-align: center;
 }
 
 .footer-links a {
@@ -881,14 +884,16 @@ p {
 
 .footer-bottom {
   margin-top: 38px;
-
   padding-top: 22px;
 
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  justify-content: space-between;
+  gap: 8px;
 
-  gap: 20px;
+  text-align: center;
 
   border-top:
     1px solid rgba(250, 247, 240, .09);
@@ -970,11 +975,7 @@ p {
 @media (max-width: 640px) {
 
   .container {
-    width:
-      min(
-        calc(100% - 28px),
-        var(--container)
-      );
+    width: min(calc(100% - 28px), var(--container));
   }
 
   .header-inner {
@@ -990,21 +991,61 @@ p {
   }
 
   h1 {
-    font-size:
-      clamp(48px, 14vw, 68px);
+    font-size: clamp(46px, 13vw, 60px);
   }
 
   h2 {
-    font-size:
-      clamp(37px, 11vw, 52px);
+    font-size: clamp(36px, 10vw, 50px);
   }
 
+  /* Alle normalen Bereiche kompakter */
   .section {
-    padding: 82px 0;
+    padding: 62px 0;
+  }
+
+  /* Startbereich */
+  .hero {
+    min-height: auto;
+    padding: 55px 0 65px;
+  }
+
+  .hero-grid {
+    gap: 38px;
+  }
+
+  .hero-actions {
+    margin: 30px 0;
   }
 
   .hero-image {
-    height: 330px;
+    height: 350px;
+  }
+
+
+
+  .hero-note {
+    left: 14px;
+    right: auto;
+    bottom: 14px;
+
+    width: fit-content;
+    max-width: calc(100% - 28px);
+  }
+
+
+
+  /* Idee */
+  .manifesto-grid {
+    gap: 28px;
+  }
+
+  .manifesto-copy {
+    padding-top: 0;
+  }
+
+  /* Langzeitbaden */
+  .section-heading {
+    margin-bottom: 34px;
   }
 
   .bath-section-image,
@@ -1012,31 +1053,51 @@ p {
     height: 320px;
   }
 
-  .hero-note {
-    left: 10px;
-    right: 10px;
-
-    width: auto;
+  /* Raum */
+  .copper-section-image {
+    margin-top: 35px;
   }
 
+  /* Ablauf */
   .rhythm {
     grid-template-columns: 1fr;
   }
 
   .rhythm-item {
     min-height: auto;
+    padding: 26px 24px;
+  }
+
+  /* Kontakt – deutlich weniger Leerraum */
+  .contact-section {
+    padding: 38px 0;
   }
 
   .contact-shell {
     padding: 30px 22px;
+    gap: 32px;
   }
 
   .contact-form {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .contact-form > * {
     grid-column: 1 / -1;
+  }
+
+  .form-actions {
+    gap: 12px;
+  }
+
+  .form-actions .button {
+    width: 100%;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 42px 0 24px;
   }
 
   .footer-main,
